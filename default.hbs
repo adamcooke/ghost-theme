@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-    {{! Document Settings }}
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-    {{! Page Meta }}
     <title>{{meta_title}}</title>
     <meta name="description" content="{{meta_description}}" />
 
@@ -13,31 +11,40 @@
     <meta name="MobileOptimized" content="320" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    {{! Styles'n'Scripts }}
     <link rel="stylesheet" type="text/css" href="/assets/css/screen.css" />
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic|Open+Sans:700,400" />
-
-    {{! Ghost outputs important style and meta data with this tag }}
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    
     {{ghost_head}}
 </head>
 <body class="{{body_class}}">
-
-    {{! Everything else gets inserted here }}
+  <header class='main'>
+    <h1><a href='/'>Adam Cooke</a></h1>
+    <p class='title'>Software designer &amp; developer</p>
+  </header>
+  
+  <nav class='main'>
+    <div class='inner'>
+      <h2>My Companies</h2>
+      <ul class='social'>
+        <li><a href='http://atechmedia.com'><b>aTech Media</b> - software development</a></li>
+        <li><a href='http://dial9.co.uk'><b>Dial 9 Communications</b> - VoIP</a></li>
+        <li><a href='http://niftyware.io'><b>Niftyware</b> - billing &amp; helpdesk</a></li>
+        <li><a href='http://fusionwifi.com'><b>FusionWiFi</b> - business WiFi solutions</a></li>
+      </ul>
+      <hr />
+      <h2>Elsewhere</h2>
+      <ul class='social'>
+        <li><a href='http://twitter.com/adamcooke'>Follow me on <b>Twitter</b></a></li>
+        <li><a href='http://github.com/adamcooke'>Check out my code on <b>GitHub</b></a></li>
+        <li><a href='http://dribbble.com/adamcooke'>View some of my designs on <b>Dribbble</b></a></li>
+        <li><a href='http://uk.linkedin.com/in/adamcooke'>Take a look at my <b>Linked In</b> profile</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+  <section class='content'>
     {{{body}}}
-
-    <footer class="site-footer">
-        <a class="subscribe icon-feed" href="{{@blog.url}}/rss/"><span class="tooltip">Subscribe!</span></a>
-        <div class="inner">
-             <section class="copyright">All content copyright <a href="/">{{@blog.title}}</a> &copy; 2013 &bull; All rights reserved.</section>
-             <section class="poweredby">Proudly published with <a class="icon-ghost" href="http://ghost.org">Ghost</a></section>
-        </div>
-    </footer>
-
-    {{! Ghost outputs important scripts and data with this tag }}
-    {{ghost_foot}}
-
-    {{! The main JavaScript file for Casper }}
-    <script type="text/javascript" src="/assets/js/index.js"></script>
+  </section>
 
 </body>
 </html>
