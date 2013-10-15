@@ -1,12 +1,18 @@
 {{!< default}}
 
-{{! The main content area on the homepage }}
+<section class='welcome'>
+  <p>
+    <b>Greetings!</b> I'm Adam and I'm a software <a href='http://github.com/adamcooke'>developer</a> &amp; <a href='http://dribbble.com/adamcooke'>designer</a> and managing director of <a href='http://atechmedia.com'>aTech Media</a>, <a href='http://niftyware.io'>Niftyware</a> &amp; <a href='http://dial9.co.uk'>Dial 9</a>.
+    This blog contains articles about development, design, small businesses and more!
+  </p>
+</section>
+
 <main class="content" role="main">
 
     {{#foreach posts}}
 
-    <article class="{{post_class}}">
-        <p class="meta"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="D MMMM YYYY"}}</time></p>
+    <article class="home {{post_class}}">
+        <p class="meta"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="dddd Do MMMM YYYY"}}</time></p>
         <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
         <section class="post-excerpt">
             <p>{{excerpt}}&hellip;</p>
