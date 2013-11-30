@@ -231,6 +231,11 @@ nav.pagination {
 	color:#999;
 }
 
+nav.pagination a {
+	color:#999;
+	margin:0 10px;
+}
+
 /*
 	Post footer
 */
