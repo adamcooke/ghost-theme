@@ -305,3 +305,5 @@ section.content footer.global {
 	color:#bbb;
 	line-height:1.5;
 }
+
+#disqus_thread { margin-top:25px; }
