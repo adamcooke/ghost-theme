@@ -36,10 +36,12 @@ nav.main div.inner ul.social {
 	line-height:2.0;
 }
 
-nav.main div.inner hr {
-	background:none;
-	border:0;
-	margin:15px 0;
+nav.main div.inner div.group {
+	margin-top:30px;
+}
+
+nav.main div.inner div.group:first-child {
+	margin-top:0;
 }
 
 nav.main div.inner ul.social li a {
@@ -94,7 +96,7 @@ header.main p {
 section.content {
 	margin-left:300px;
 	padding:70px;
-	padding-right:15%;
+	padding-right:10%;
 }
 
 /*
@@ -154,6 +156,12 @@ section.content article section.post-content h3,
 section.content article section.post-content h4,
 section.content article section.post-content h5 {
 	margin:18px 0;
+}
+
+section.content article section.post-content p img {
+	max-width:85%;
+	display:block;
+	margin:auto;
 }
 
 section.content article section.post-content h1,  
@@ -307,3 +315,29 @@ section.content footer.global {
 }
 
 #disqus_thread { margin-top:25px; }
+
+/* 
+	Small
+*/
+@media all and (max-width:900px), (max-height:600px) {
+	nav.main { position:relative; background:#F8F5F3; width:inherit;border-bottom:1px solid #ded1c9;}
+	nav.main div.inner { position:relative;height:inherit; padding:20px 40px; overflow:hidden; width:inherit;}
+	nav.main div.inner h2 { color:#292422;}
+	nav.main div.inner ul.social li a b { color:#292422; }
+	nav.main div.inner div.group { float:left;clear:none; margin-top:0; margin-right:60px;}
+	nav.main div.inner div.group:last-child { margin-right:0;}
+	header.main {background-color:#292422; width:inherit; padding:20px 40px; height:inherit; position:relative;}
+	header.main h1, header.main p { margin-left:0;}
+	header.main h1 { font-size:0.7em; float:left; margin-right:15px}
+	header.main p { margin-left:5px;}
+	section.content { margin-left:0; padding:40px;}
+}
+
+@media all and (max-width:575px) {
+	section.content { padding:20px;}
+	nav.main div.inner { padding:20px 20px;}
+	nav.main div.inner div.group:last-child { display:none; }
+	header.main { padding:20px; }
+	header.main h1 { float:none;}
+	header.main p { display:none; }
+}
