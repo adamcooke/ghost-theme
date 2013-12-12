@@ -19,7 +19,7 @@ nav.main {
 nav.main div.inner {
 	position:fixed;
 	bottom:0;
-	height:480px;	
+	height:560px;	
 	width:240px;
 	padding-left:40px;
 }
@@ -58,6 +58,15 @@ nav.main div.inner ul.social li a:hover {
 nav.main div.inner ul.social li a b {
 	color:#afa29a;
 }
+
+nav.main div.inner div.group.pages ul.social li a{
+	font-size:1.1em;
+}
+
+nav.main div.inner div.group.pages ul.social li a b{
+	color:#fff;
+}
+
 
 /*
 	Header
@@ -115,6 +124,10 @@ section.content section.welcome a {
 	color:#25a1db;
 	text-decoration:none;
 	border-bottom:1px solid #c1dbef;
+}
+
+section.content section.welcome a.d9 {
+	white-space:nowrap;
 }
 
 /*
@@ -316,14 +329,24 @@ section.content footer.global {
 
 #disqus_thread { margin-top:25px; }
 
+#disqus_thread a { color:#292422 }
+
 /* 
 	Small
 */
-@media all and (max-width:900px), (max-height:600px) {
+
+@media all and (max-height:650px) {
+	nav.main div.inner div.group.elsewhere { display:none; }
+	nav.main div.inner { height:400px; }
+}
+
+
+
+@media all and (max-width:900px), (max-height:500px) {
 	nav.main { position:relative; background:#F8F5F3; width:inherit;border-bottom:1px solid #ded1c9;}
 	nav.main div.inner { position:relative;height:inherit; padding:20px 40px; overflow:hidden; width:inherit;}
 	nav.main div.inner h2 { color:#292422;}
-	nav.main div.inner ul.social li a b { color:#292422; }
+	nav.main div.inner div.group ul.social li a b { color:#292422 !important; }
 	nav.main div.inner div.group { float:left;clear:none; margin-top:0; margin-right:60px;}
 	nav.main div.inner div.group:last-child { margin-right:0;}
 	header.main {background-color:#292422; width:inherit; padding:20px 40px; height:inherit; position:relative;}
@@ -333,11 +356,23 @@ section.content footer.global {
 	section.content { margin-left:0; padding:40px;}
 }
 
-@media all and (max-width:575px) {
+@media all and (max-width:820px) {
+	nav.main div.inner div.group.elsewhere { display:none; }
+	nav.main div.inner div.group.companies {margin-right:0;}
+}
+
+@media all and (max-width:560px) {
+	nav.main div.inner div.group.companies { display:none; }
+}
+
+@media all and (max-width:400px) {
 	section.content { padding:20px;}
 	nav.main div.inner { padding:20px 20px;}
-	nav.main div.inner div.group:last-child { display:none; }
+	nav.main div.inner div.group.companies { display:none; }
 	header.main { padding:20px; }
 	header.main h1 { float:none;}
 	header.main p { display:none; }
+	section.content section.welcome { font-size:1.3em; }
+	section.content article.home.post p.meta { font-size:0.9em; }	
+	section.content article.home.post h2 a { font-size:1.3em; }	
 }
