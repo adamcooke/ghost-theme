@@ -323,6 +323,17 @@ section.content article section.post-content pre {
 	font-size:0.9em;
 	padding:10px;
 	border:1px solid #f0ebe8;
+	white-space:pre;
+}
+
+section.content article section.post-content p code,
+section.content article section.post-content li code {
+	background:#f8f5f3;
+	font-size:0.9em;
+	padding:0 2px;
+	margin:0 2px;
+	border:1px solid #f0ebe8;
+	white-space:pre;
 }
 
 section.content article section.post-content ul li {
