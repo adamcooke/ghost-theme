@@ -442,6 +442,59 @@ section.content article.post footer.post section.share a.google {
 	background-image:url('../img/google.svg');
 }
 
+/*
+Subscribe
+*/
+section.content form.subscribe {
+  background:#797674;
+  padding:25px;
+  color:#fff;
+  margin-top:25px;
+}
+
+section.content form.subscribe h3 {
+  font-size:1.8em;
+}
+
+section.content form.subscribe p.text {
+  font-size:1.2em;
+  line-height:1.5;
+  margin-top:10px;
+  opacity:0.6;
+}
+
+section.content form.subscribe p.form {
+  margin-top:20px;
+}
+
+section.content form.subscribe p.form input {
+  background:#292422;
+  border:0;
+  padding:10px;
+  font-size:1.1em;
+  width:250px;
+  color:#fff;
+  line-height:1;
+  box-sizing: border-box;
+  vertical-align: middle;
+  margin-right:2%;
+  width:65%;
+  font-weight:normal;
+}
+
+section.content form.subscribe p.form button {
+  -webkit-appearance:none;
+  font-weight:normal;
+  background:#9E9997;
+  border:0;
+  padding:10px;
+  font-size:1.1em;
+  color:#fff;
+  width:30%;
+  line-height:1;
+  box-sizing: border-box;
+  vertical-align: middle;
+}
 
 /*
 	Page footer
