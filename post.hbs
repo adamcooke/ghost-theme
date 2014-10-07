@@ -4,58 +4,30 @@
     the {body} of the default.hbs template, which contains our header/footer. }}
 
 <main class="content" role="main">
-    <article class="{{post_class}}">
+  {{#post}}
+  <article class="article {{post_class}}">
+    <header class="post-header {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}">
+      <p class="meta"><time datetime="{{date format="YYYY-MM-DD"}}">{{date format='dddd Do MMMM YYYY'}}</time></p>
+      <h1 class="title">{{{title}}}</h1>    
+    </header>
 
-        {{#post}}
+    <section class="post-content">
+        {{content}}
+    </section>
 
-        <p class="meta"><time datetime="{{date format="YYYY-MM-DD"}}">{{date format='dddd Do MMMM YYYY'}}</time></p>
-        <h1 class="title">{{{title}}}</h1>
-
-        <section class="post-content">
-            {{content}}
-        </section>
-
-        <footer class="post">
-
-            {{#if author}}
-                <section class="author">
-                    <h4>{{author.name}}</h4>
-                    <p>{{author.bio}}</p>
-                </section>
-            {{/if}}
-
-            <section class="share">
-                <h4>Share this post</h4>
-                <a class="twitter" href="http://twitter.com/share?text={{title}}&url={{url absolute="true"}}"
-                    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
-                    <span class="hidden">Twitter</span>
-                </a>
-                <a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}"
-                    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
-                    <span class="hidden">Facebook</span>
-                </a>
-                <a class="google" href="https://plus.google.com/share?url={{url absolute="true"}}"
-                   onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
-                    <span class="hidden">Google+</span>
-                </a>
-            </section>
-
-        </footer>
-
-        {{/post}}
-
-    </article>
+  </article>
+  {{/post}}
     
-    <form class='subscribe' action='//adamcooke.us8.list-manage.com/subscribe/post?u=4fb7378b0cebd1b5a393500b3&amp;id=a2115b58e9' method='post'>
-      <h3>Enjoy this post?</h3>
-      <p class='text'>
-        If you like Rails, iOS, networking or startups, why not pop your e-mail address below and I'll send you 
-        all the latest news from my blog straight to your mailbox. No spam, just posts.
-      </p>
-      <p class='form'>
-        <input type='email' name='EMAIL' placeholder='Pop your e-mail address in here...'>
-        <button>Subscribe</button>
-      </p>
-    </form>
+  <form class='subscribe' action='//adamcooke.us8.list-manage.com/subscribe/post?u=4fb7378b0cebd1b5a393500b3&amp;id=a2115b58e9' method='post'>
+    <h3>Enjoy this post?</h3>
+    <p class='text'>
+      If you like Rails, iOS, networking or startups, why not pop your e-mail address below and I'll send you 
+      all the latest news from my blog straight to your mailbox. No spam, just posts.
+    </p>
+    <p class='form'>
+      <input type='email' name='EMAIL' placeholder='Pop your e-mail address in here...'>
+      <button>Subscribe</button>
+    </p>
+  </form>
 
 </main>

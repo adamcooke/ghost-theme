@@ -6,16 +6,16 @@
   </p>
 </section>
 
-<main class="content" role="main">
+<main class="content post-list" role="main">
 
     {{#foreach posts}}
 
     <article class="home {{post_class}}">
-        <p class="meta"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="dddd Do MMMM YYYY"}}</time></p>
-        <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
-        <section class="post-excerpt">
-            <p>{{excerpt}}&hellip;</p>
-        </section>
+      <p class="meta"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="dddd Do MMMM YYYY"}}</time></p>
+      <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
+      <section class="post-excerpt">
+          <p>{{excerpt}}&hellip;</p>
+      </section>
     </article>
 
     {{/foreach}}
