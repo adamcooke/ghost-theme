@@ -1,11 +1,13 @@
 {{!< default}}
 <main class="content" role="main">
-    <article class="{{post_class}}">
-        {{#post}}
-        <h1 class="title">{{{title}}}</h1>
-        <section class="post-content">
-            {{content}}
-        </section>
-        {{/post}}
-    </article>
+  {{#post}}
+  <article class="{{post_class}}">
+    <header class="post-header {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}">
+      <h1 class="title">{{{title}}}</h1>    
+    </header>
+    <section class="post-content">
+        {{content}}
+    </section>
+  </article>
+  {{/post}}
 </main>

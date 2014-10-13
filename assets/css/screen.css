@@ -1,7 +1,7 @@
 @import url(normalize.css);
 
 html { font-family:'proxima-nova', Arial, sans-serif; font-size:12px;}
-
+body { padding-bottom:35px;}
 /* Icons */
 @font-face {
   font-family: "icons";
@@ -74,7 +74,7 @@ html { font-family:'proxima-nova', Arial, sans-serif; font-size:12px;}
 */
 
 nav.main {
-	background:url('../img/me.png') #292422 no-repeat -35px bottom;
+	background:url('../img/me.png') #2a2f31 no-repeat -35px bottom;
 	background-size:150px;
 	width:300px;
 	position:fixed;
@@ -86,7 +86,7 @@ nav.main {
 nav.main div.inner {
 	position:fixed;
 	bottom:0;
-	height:460px;	
+	height:420px;	
 	width:240px;
 	padding-left:40px;
 }
@@ -112,18 +112,17 @@ nav.main div.inner div.group:first-child {
 }
 
 nav.main div.inner ul.social li a {
-	color:#655D58;
+	color:#58666c;
 	padding-bottom:2px;
 	text-decoration:none;
 }
 
 nav.main div.inner ul.social li a:hover {
-	color:#afa29a;
-	border-bottom:1px solid #726358;
+	border-bottom:1px solid #3c474c;
 }
 
 nav.main div.inner ul.social li a b {
-	color:#afa29a;
+	color:#72858c;
 }
 
 nav.main div.inner div.group ul.nav li {
@@ -153,7 +152,7 @@ nav.main div.inner div.group ul.nav li i {
 }
 
 nav.main div.inner div.group ul.nav li a:hover {
-	border-bottom:1px solid #726358;
+	border-bottom:1px solid #69858C;
 }
 
 
@@ -266,6 +265,7 @@ section.content article header.post-header {
   margin-bottom:55px;
   background-size:cover;
   background-position:center center;
+  box-shadow: inset 21px 0 29px -21px rgba(0,0,0,1);
 }
 
 section.content article header.post-header p.meta {
@@ -285,6 +285,7 @@ section.content article header.post-header h1 {
 section.content article header.post-header.no-cover {
   padding:70px 70px 0 70px;
   margin-bottom:20px;
+  box-shadow:none;
 }
 
 section.content article header.post-header.no-cover h1 {
@@ -343,10 +344,10 @@ section.content article section.post-content h5 {
 }
 
 section.content article section.post-content pre {
-	background:#f8f5f3;
+	background:#efefef;
 	font-size:0.9em;
-	padding:10px;
-	border:1px solid #f0ebe8;
+	padding:10px 15px;
+	border:1px solid #ddd;
 	white-space:pre;
 }
 
