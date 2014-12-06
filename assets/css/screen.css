@@ -86,7 +86,7 @@ nav.main {
 nav.main div.inner {
 	position:fixed;
 	bottom:0;
-	height:420px;	
+	height:420px;
 	width:240px;
 	padding-left:40px;
 }
@@ -96,7 +96,7 @@ nav.main div.inner h2 {
 	color:#fff;
 	margin-bottom:10px;
 	font-family:adelle, georgia, serif;
-	font-weight:normal;	
+	font-weight:normal;
 }
 
 nav.main div.inner ul.social {
@@ -304,9 +304,9 @@ section.content article section.post-content {
 }
 
 section.content article section.post-content p,
-section.content article section.post-content pre, 
+section.content article section.post-content pre,
 section.content article section.post-content blockquote,
-section.content article section.post-content h1,  
+section.content article section.post-content h1,
 section.content article section.post-content h2,
 section.content article section.post-content h3,
 section.content article section.post-content h4,
@@ -320,7 +320,7 @@ section.content article section.post-content p img {
 	margin:auto;
 }
 
-section.content article section.post-content h1,  
+section.content article section.post-content h1,
 section.content article section.post-content h2,
 section.content article section.post-content h3,
 section.content article section.post-content h4,
@@ -405,16 +405,23 @@ section.content article.home.post section.post-excerpt {
 	font-size:0.9em;
 }
 
+div.footer {
+  border-top:1px solid #efefef;
+  padding-top:50px;
+  margin-top:60px;
+  overflow:hidden;
+}
+
+.viaduct-link {
+  float:right;
+}
 
 /*
 	Pagination
 */
 nav.pagination {
-	border-top:1px solid #efefef;
-	padding-top:50px;
-	margin-top:60px;
-	text-align:center;
 	color:#999;
+  float:left;
 }
 
 nav.pagination a {
@@ -536,6 +543,6 @@ section.content footer.global {
 	section.content article header.post-header h1 { font-size:1.6em; }
 	section.content article header.post-header.no-cover { padding:20px; padding-bottom:0; }
 	section.content article section.post-content { margin:20px;}
-	section.content article.home.post p.meta { font-size:0.9em; }	
-	section.content article.home.post h2 a { font-size:1.3em; }	
+	section.content article.home.post p.meta { font-size:0.9em; }
+	section.content article.home.post h2 a { font-size:1.3em; }
 }
