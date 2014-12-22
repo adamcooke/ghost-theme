@@ -361,10 +361,15 @@ section.content article section.post-content li code {
 	white-space:pre;
 }
 
-section.content article section.post-content ul li {
+section.content article section.post-content ul li  {
 	margin-left:35px;
 	list-style:square;
 }
+
+section.content article section.post-content ol li {
+	margin-left:35px;
+}
+
 
 /*
 	Post list
